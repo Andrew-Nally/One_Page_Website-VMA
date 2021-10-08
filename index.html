@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----Website Title---->
+    <title> </title>
+    <!----links to css---->
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/modal.css">
+
+    <script src="Js/scripts.js"defer></script>
+    <!----links to google fonts---->
+    <link href="" rel="stylesheet"> 
+    <!-----link to font awesome---->
+</head>
+
+<body>
+    <!---NAVBar-->
+    <div class="wrap">
+        <div class="menu-container">
+            <ul class="menu">
+                <!----nav-links---->
+                <li><a href="#home">
+                Home
+                </a></li>
+                <li><a href="#video">
+                Video Gallery
+                </a></li>
+                <li><a href="#photo">
+                Photo Gallery
+                </a></li>
+                <li><a href="#signup">
+                Get The Latest News First!
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <!--END NAV-->
+    <!--HOME-->
+    <div id="home">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="head-main">MTV's 2021 VIDEO MUSIC AWARDS</h1>
+                <img id="vma-logo"src="./images/vmamtv.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    <!--END HOME-->
+    <!------Video Gallery----->
+    <section id="video">
+        <div class="container">
+            <h1>Top 3 Performances at the 2021 VMAs</h1>
+            <div class="flex-container2">
+              <!---video container 1-->
+        <div class="video-container">
+            <div class="video-overlay1">
+                Have Mercy - Chlöe
+            </div>
+            <div class="video">
+                <video src="./Videos/Chlöe Performs _Have Mercy_ _ 2021 VMAs _ MTV.MP4" controls></video>
+            </div>
+        </div>
+        <!-------end video 1-->
+          <!---video container 2-->
+        <div class="video-container">
+            <div class="video-overlay2">
+                Industry Baby & Montero -
+                Lil Nas X ft. Jack Harlow
+            </div>
+            <div class="video">
+                <video src="./Videos/Lil Nas X ft. Jack Harlow Perform _Industry Baby_ & _Montero_ _ 2021 VMAs _ MTV.MP4" controls></video>
+            </div>
+        </div>
+    <!-------end video 2-->
+    
+  <!---video container 3-->
+  <div class="video-container">
+    <div class="video-overlay3">
+        Good 4 U -
+        Olivia Rodrigo
+    </div>
+    <div class="video">
+    <video src="./Videos/Olivia Rodrigo Performs _good 4 u_ _ 2021 VMAs _ MTV.MP4" controls></video>
+       
+        
+    </div>
+</div>
+<!-------end video 3-->
+ 
+            </div>
+        </div>
+    </section>
+    <!--GALLERY-->
+    <section id="photo">
+    <h2 style="text-align:center">This Years VMA 2021 Highlights....</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="./images/beiber.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/billie.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/chloe.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/doja.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/mgk.jpeg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/musgraves.jpeg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/nasxmarlow.jpeg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/sheeran.jpeg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/mendes.jpeg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+ 
+</div>
+<div class="div"></div>
+<div class="div2"></div>
+<br>
+<div class="gallery-header">
+    <h2>Click for Gallery!</h2>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 9</div>
+      <img src="./images/beiber.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 9</div>
+      <img src="./images/billie.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 9</div>
+      <img src="./images/chloe.jpeg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 9</div>
+      <img src="./images/doja.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">5 / 9</div>
+        <img src="./images/mgk.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 9</div>
+        <img src="./images/musgraves.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 9</div>
+        <img src="./images/nasxmarlow.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 9</div>
+        <img src="./images/sheeran.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 9</div>
+        <img src="./images/mendes.jpeg" style="width:100%">
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/beiber.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Justin Beiber">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/billie.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Billie Eillish">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/chloe.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Chlöe">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/doja.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Doja Cat">
+    </div>
+    <div class="column">
+        <img class="demo cursor" src="./images/mgk.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Machine Gun Kelly">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./images/musgraves.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Casey Musgraves">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./images/nasxmarlow.jpeg" style="width:100%" onclick="currentSlide(7)" alt="Lil Nas X and John Marlow">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./images/sheeran.jpeg" style="width:100%" onclick="currentSlide(8)" alt="Ed Sheeran">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./images/mendes.jpeg" style="width:100%" onclick="currentSlide(9)" alt="Shawn Mendes">
+      </div>
+  </div>
+</div>
+
+            
+    <!--RSVP-->
+    <section id="signup">
+        <div class="container">
+            <div class="heading-padding">
+                <h1 class="heading-padding">Get Your Celebrity News Here First!!</h1>
+                <div class="reservation">
+                    <h2><span>Join to receive our member only updates!</span>
+                        <br/> SO JUICY!
+                    </h2>
+                    <p class="rsvp-text">
+                        
+                    </p>
+                    <div class="form-rsvp">
+                        <form action="" method="post">
+                            <input class="rsvp" type="text" value="" placeholder="First Name">
+                            <input class="rsvp" type="text" value="" placeholder="Last Name">
+                            <input class="rsvp" type="text" value="" placeholder="Phone Number">
+                            <input class="rsvp" type="text" value="" placeholder="Email Address">
+                            
+                            <div class="submit">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                        <div class="form-spacer">
+                            <label class="terms">Terms and Conditions</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END RSVP-->
+
+    <!--FOOTER-->
+    <div id="footer">
+        &nbsp;| &nbsp; &copy; 
+    </div>
+    <!--END FOOTER-->
+</body>
+
+</html>
